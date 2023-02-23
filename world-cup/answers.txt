@@ -1,0 +1,17 @@
+Times:
+
+10 simulations: 0m0.176s
+100 simulations: 0m0.140s
+1000 simulations: 0m0.175s
+10000 simulations: 0m0.409s
+100000 simulations: 0m1.741s
+1000000 simulations: 0m16.644s
+
+Questions:
+
+Which predictions, if any, proved incorrect as you increased the number of simulations?: 
+For men: France and Croatia, for women: Netherlands
+
+Suppose you're charged a fee for each second of compute time your program uses.
+After how many simulations would you call the predictions "good enough"?: 
+After about 1000 simulations

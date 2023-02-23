@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+    <!-- {% for quote in quotes %}
+    {% endfor %} -->
+    <div>A share of {{quotes["name"]}} ({{quotes["symbol"]}}) costs {{quotes["price"] | usd}}.</div>
+{% endblock %}

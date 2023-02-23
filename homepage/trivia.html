@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link href="styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia!</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">LmOpe</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button"
+                            aria-expanded="false">Projects</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="trivia.html">Trivia</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <span id="time"></span>
+        </div>
+    </nav>
+    <div class="header">
+        <h1>Trivia!</h1>
+    </div>
+    <div class="container">
+        <div class="section">
+            <h2>Part 1: Multiple Choice </h2>
+            <hr>
+            <!-- TODO: Add multiple choice question here -->
+            <h2> 1 </h2>
+            <h3>What can be broken but is never held?</h3>
+            <button class="Incorrect">Heart</button>
+            <button class="Correct">Promise</button>
+            <button class="Incorrect">Bone</button>
+            <button class="Incorrect">Thought</button>
+            <button class="Incorrect">Bottle</button>
+
+            <p id="feedback1"></p>
+        </div>
+
+        <div class="section">
+            <h2>Part 2: Free Response</h2>
+            <hr>
+            <!-- TODO: Add free response question here -->
+            <h3>What geometric shape is generally used for stop signs?</h3>
+
+            <input type="text" placeholder="Answer here" autocomplete="off" autofocus>
+            <button class="check">Check Answer</button>
+
+            <p id="feedback2"></p>
+        </div>
+    </div>
+    <script>
+        // TODO: Add code to check answers to questions
+        document.addEventListener('DOMContentLoaded', function () {
+            // When correct button is clicked, change color to green
+            let correct = document.querySelector('.Correct');
+            correct.addEventListener('click', function () {
+                correct.style.backgroundColor = 'green';
+                correct.style.color = 'white';
+                document.querySelector('#feedback1').innerHTML = 'Correct';
+            })
+
+            // When incorrect button is clicked, change color to red
+            let incorrects = document.querySelectorAll('.Incorrect');
+            for (let i = 0; i < incorrects.length; i++) {
+                incorrects[i].addEventListener('click', function () {
+                    incorrects[i].style.backgroundColor = 'red';
+                    incorrects[i].style.color = 'white';
+                    document.querySelector('#feedback1').innerHTML = 'Incorrect';
+                })
+            }
+
+            // When free response button is clicked
+            // When correct button is clicked, change text field  to green, otherwise, red
+            let check = document.querySelector('.check');
+            check.addEventListener('click', function () {
+                let input = document.querySelector('input');
+                if (input.value === "Octagon") {
+                    input.style.backgroundColor = 'green';
+                    document.querySelector('#feedback2').innerHTML = 'Correct';
+                }
+                else {
+                    input.style.backgroundColor = 'red';
+                    document.querySelector('#feedback2').innerHTML = 'Incorrect';
+                }
+
+            })
+
+        })
+    </script>
+</body>
+<script type="text/javascript" src="javascript.js"></script>
+
+</html>

@@ -1,0 +1,133 @@
+body
+{
+    background-color: #170420;
+    color: #ffffff;
+}
+
+table
+{
+    outline: 5px solid #170420;
+    background-color: #ffffff;
+    color: #170420;
+}
+
+.sbmtBtn
+{
+    width: 100%;
+    margin: 5px;
+    text-decoration: none;
+    display: grid;
+}
+
+.btn-primary, #cgpa
+{
+    background-color: #ffffff;
+    color: #170420;
+    border: unset;
+    margin: 0;
+    display: inline;
+}
+ input::placeholder
+ {
+    color: #f5f5f5;
+ }
+.nav-link:hover
+{
+    background-color: white;
+    color: #170420;
+}
+.btn-primary:hover
+{
+    background-color: #37044e;
+    color: white;
+}
+.session
+{
+    border-radius: 5px;
+    margin: 10px 5px;
+    background-color: #530975;
+    color: #ffffff;
+}
+
+footer :not(.bi)
+{
+    color: rgb(223, 217, 217);
+    background-color: #530975;
+    padding: 1%;
+}
+
+.footer-icons
+{
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.add
+{
+    width: 25%;
+    margin: 5px;
+    padding: auto;
+    border-radius: 5px;
+    border: unset;
+    display: inline;
+}
+
+
+.right-icon
+{
+
+    float:right;
+}
+
+.left-icon,  #cgpa
+{
+    float: left;
+}
+
+.bi-pencil-square
+{
+    margin-left: 25%;
+}
+input
+{
+    color: white;
+    background-color: #530975;
+}
+.navbar-toggler, .nav-link
+{
+    color: white;
+}
+/* Size for brand */
+nav .navbar-brand
+{
+    font-size: xx-large;
+}
+
+/* Colors for brand */
+nav .navbar-brand .blue
+{
+    color: #537fbe;
+}
+nav .navbar-brand .red
+{
+    color: #ea433b;
+}
+nav .navbar-brand .yellow
+{
+    color: #f5b82e;
+}
+nav .navbar-brand .green
+{
+    color: #2e944b;
+}
+
+.alert
+{
+    align-items: center;
+    color: red;
+    background-color: #170420;
+    text-align: center;
+    border: none;
+    margin: 1px;
+}

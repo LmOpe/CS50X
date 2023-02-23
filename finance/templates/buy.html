@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Buy
+{% endblock %}
+
+{% block main %}
+        <form action="/buy" method="post">
+            <div class="mb-3">
+                <input class="form-control mx-auto w-auto" type="text" placeholder="Symbol" autocomplete="off" name="symbol">
+            </div>
+            <div class="mb-3">
+                <input class="form-control mx-auto w-auto" type="text" placeholder="No. of shares" autocomplete="off" name="shares">
+            </div>
+            <button type="submit" class="btn btn-primary">Buy</button>
+        </form>
+{% endblock %}
